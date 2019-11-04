@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+      <meta name="Content-Script-Type" content="text/javascript">
+      <meta name="Content-Style-Type" content="text/css">
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+      <title>Form</title>
+
+  </head>
+<body>
+
+
+
+
+
+    <p>Date/Time: <span id="datetime"></span></p>
+    <script>
+   var dt = new Date();
+   document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (("0"+dt.getDate()).slice(-2)) +"/"+ (dt.getFullYear()) +" "+ (dt.getHours()) +":"+ (dt.getMinutes());
+    </script>
+
+    <h1>THU 10/10/2019</h1>
+
+<form action="/action_page.php">
+  Chef's name: Paul
+  <p></p>
+
+
+
+<p></p>
+<p></p>
+  <h3>Station:  Bayer</h3>
+
+  <table  class="table table-bordered">
+   <tr>
+     <th scope="col">Class</th><th scope="col">rice</th><th scope="col">item</th><th scope="col">qty</th><th scope="col">made on site</th><th scope="col">left over</th>
+   </tr>
+   <tr>
+     <th scope="col">Total</th><th scope="col"></th><th scope="col"></th><th scope="col">$1,450</th><th scope="col"></th><th scope="col"></th>
+   </tr>   
+     <tr><td>classic Roll</td><td>white</td><td>Shrimp tempura</td><td>16</td>
+<td><input type="text" name="l1" value=""></td><td><input type="text" name="l1" value=""></td>   </tr> 
+     <tr><td>side dish</td><td></td><td>sashimi rice bowl</td><td>16</td>
+<td><input type="text" name="l1" value=""></td><td><input type="text" name="l1" value=""></td>   </tr>  
+     <tr><td>side dish</td><td></td><td>edamame</td><td>16</td>
+<td><input type="text" name="l1" value=""></td><td><input type="text" name="l1" value=""></td>   </tr> 
+     <tr><td>side dish</td><td></td><td>seaweed salad</td><td>16</td>
+<td><input type="text" name="l1" value=""></td><td><input type="text" name="l1" value=""></td>   </tr> 
+     <tr><td>side dish</td><td></td><td>spicy crab</td><td>16</td>
+<td><input type="text" name="l1" value=""></td><td><input type="text" name="l1" value=""></td>   </tr> 
+
+     <tr><td>combo</td><td>white</td><td>special+nigiri</td><td>14</td>
+<td><input type="text" name="l1" value=""></td><td><input type="text" name="l1" value=""></td>   </tr> 
+     <tr><td>combo</td><td>white</td><td>sspecial+classic</td><td>14</td>
+<td><input type="text" name="l1" value=""></td><td><input type="text" name="l1" value=""></td>   </tr>  
+     <tr><td>combo</td><td>white</td><td>classic+nigiri</td><td>36</td>
+<td><input type="text" name="l1" value=""></td><td><input type="text" name="l1" value=""></td>   </tr> 
+     <tr><td>combo</td><td>white</td><td>calssic roll</td><td>16</td>
+<td><input type="text" name="l1" value=""></td><td><input type="text" name="l1" value=""></td>   </tr> 
+     <tr><td>combo</td><td>brown</td><td>calssic roll</td><td>6</td>
+<td><input type="text" name="l1" value=""></td><td><input type="text" name="l1" value=""></td>   </tr> 
+
+  </table>
+
+  <a class="btn btn-primary" data-toggle="collapse" href="./bayer2.html" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">submit</a>
+</p>
+
+</form>
+
+
+</body>
+</html>

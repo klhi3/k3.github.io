@@ -15,19 +15,15 @@
 
 
 
+
+
     <p>Date/Time: <span id="datetime"></span></p>
-
-    <h1>THU 10/10/2019</h1>
-
     <script>
-    var dt = new Date();
-    document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (("0"+dt.getDate()).slice(-2)) +"/"+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()+1).slice(-2)) +":"+ (("0"+dt.getMinutes()+1).slice(-2));
+   var dt = new Date();
+   document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (("0"+dt.getDate()).slice(-2)) +"/"+ (dt.getFullYear()) +" "+ (dt.getHours()) +":"+ (dt.getMinutes());
     </script>
 
-
-
-
-
+    <h1>THU 10/10/2019</h1>
 
 <form action="/action_page.php">
   Chef's name: <input type="text" name="chef_name" value="Paul">
@@ -40,7 +36,7 @@
 <p></p>
 <p></p>
   <h3>Station:</h3>
-  <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Bayer</a>
+  <a class="btn btn-primary" data-toggle="collapse" href="./bayer.html" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Bayer</a>
   <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Prudential Tower</button>
   <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Paul Weiss</button>
 </p>
